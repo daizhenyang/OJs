@@ -1,18 +1,3 @@
-#include <vector>
-#include <cstring>
-#include <algorithm>
-using namespace std;
-struct TreeNode {
-	int val;
-	TreeNode *left;
-	TreeNode *right;
-	TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-};
-struct ListNode {
-        int val;
-        ListNode *next;
-        ListNode(int x) : val(x), next(NULL) {}
-};
 class Solution {
 public:
 	int size(ListNode* head) {
@@ -39,6 +24,3 @@ public:
 		return build(head, 0, size(head) - 1);
 	}
 };
-int main() {
-	return 0;
-}

@@ -1,13 +1,3 @@
-#include <vector>
-#include <cstring>
-#include <algorithm>
-using namespace std;
-struct TreeNode {
-    int val;
-    TreeNode *left;
-    TreeNode *right;
-    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-};
 class Solution {
 public:
 	TreeNode * build(vector<int>& num, int l, int r) {
@@ -22,10 +12,3 @@ public:
 		return build(num, 0, num.size() - 1);
 	}
 };
-int main() {
-	int num[] = {3, 5, 8};
-	vector<int> res(num, num + 3);
-	Solution one;
-	one.sortedArrayToBST(res);
-	return 0;
-}
